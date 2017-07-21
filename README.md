@@ -1,12 +1,15 @@
 
 ## core.getDefinitionObject
 
-Normalizes the arguments of an instanciating type into an object.
+Extends `core` with a function called `getDefinitionObject`:
+
+`core.getDefinitionObject()` normalizes the arguments of an instanciating type into an object.
 this is to allow type constructors to take a list arguments instead of on keyed object. core.getDefinitionObject() will normalize the list of arguments into an object.
+
 
 ```js
 core.plugin(
-    require('core.plugin.core.getDefinitionObject')
+    require('core.plugin.core.get_definition_object')
 );
 
 // pass in a number of arguments in order:
